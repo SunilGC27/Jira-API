@@ -1,0 +1,579 @@
+{
+	"owner": "1991255",
+	"lastUpdatedBy": "1991255",
+	"lastRevision": 2354419419,
+	"team": null,
+	"id": "79868229-a930-050c-a703-9223d538c26a",
+	"name": "Jira",
+	"description": "",
+	"variables": null,
+	"auth": null,
+	"events": null,
+	"folders_order": [],
+	"order": [
+		"d580b308-49cd-5ce9-6002-0d6aabba9ead",
+		"110fd8d4-a5ff-2740-74a0-b6007259d20e",
+		"97f64ce0-5206-a7db-4376-ea4595f50e81",
+		"81f91b7d-e01a-ff2e-412a-2d060b74b2c9",
+		"3cd4bd90-7ccf-627c-fc7c-024c247922cc",
+		"a211721e-f98b-e6db-cb8c-8c12da5188aa",
+		"879bfad6-82f2-ddde-3f99-dfa30169bb4b",
+		"4d15f8c3-3d7a-96f1-7f22-7d450d28190e",
+		"5a49e516-7125-168a-a994-f035374f1e09",
+		"259da652-489d-bf39-187f-ae5007175763"
+	],
+	"folders": [],
+	"hasRequests": true,
+	"requests": [
+		{
+			"folder": null,
+			"id": "110fd8d4-a5ff-2740-74a0-b6007259d20e",
+			"name": "updateTestCase",
+			"dataMode": "raw",
+			"data": [],
+			"auth": null,
+			"events": null,
+			"rawModeData": "{\r\n  \"status\": \"5\",\r\n  \"defectList\": [],\r\n  \"updateDefectList\": \"true\",\r\n  \"comment\": \"updated by API call\"\r\n}",
+			"descriptionFormat": null,
+			"description": "Updated the execution status of the test case to \"pass\", \"fail\", etc.\n\nprojectId=12151&versionId=31026&cycleId=3639",
+			"variables": null,
+			"headers": "Content-Type: application/json\nAuthorization: Basic aGF5eWFwcGFzYW15X2V4dDpBdXN0aW44MTY=\n",
+			"method": "PUT",
+			"pathVariables": {},
+			"url": "https://jira.icontrol.com/rest/zapi/latest/execution/269767/execute",
+			"preRequestScript": null,
+			"tests": null,
+			"currentHelper": null,
+			"helperAttributes": null,
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Basic aGF5eWFwcGFzYW15X2V4dDpBdXN0aW44MTY=",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariableData": [],
+			"responses": [],
+			"collectionId": "79868229-a930-050c-a703-9223d538c26a"
+		},
+		{
+			"folder": null,
+			"id": "259da652-489d-bf39-187f-ae5007175763",
+			"name": "getIssueId",
+			"dataMode": "params",
+			"data": null,
+			"auth": null,
+			"events": null,
+			"rawModeData": null,
+			"descriptionFormat": "html",
+			"description": "",
+			"variables": null,
+			"headers": "Authorization: Basic aGF5eWFwcGFzYW15X2V4dDpBdXN0aW44MTY=\n",
+			"method": "GET",
+			"pathVariables": {},
+			"url": "https://jira.icontrol.com/rest/api/2/issue/CONVQA-11786",
+			"preRequestScript": null,
+			"tests": null,
+			"currentHelper": null,
+			"helperAttributes": null,
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Basic aGF5eWFwcGFzYW15X2V4dDpBdXN0aW44MTY=",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariableData": [],
+			"responses": [],
+			"collectionId": "79868229-a930-050c-a703-9223d538c26a"
+		},
+		{
+			"folder": null,
+			"id": "3cd4bd90-7ccf-627c-fc7c-024c247922cc",
+			"name": "getTestStepNum",
+			"dataMode": "params",
+			"data": null,
+			"auth": {
+				"type": "basic",
+				"basic": [
+					{
+						"key": "username",
+						"value": "hayyappasamy_ext",
+						"type": "string"
+					},
+					{
+						"key": "password",
+						"value": "Austin816",
+						"type": "string"
+					},
+					{
+						"key": "saveHelperData",
+						"value": true,
+						"type": "boolean"
+					},
+					{
+						"key": "showPassword",
+						"value": false,
+						"type": "boolean"
+					}
+				]
+			},
+			"events": null,
+			"rawModeData": null,
+			"descriptionFormat": "html",
+			"description": "Get the test step id which will be passed to updateTestStep call to make any perticual step pass/fail\n            \"issueId\": 221850,\n            \"issueKey\": \"CONVQA-10238\",",
+			"variables": null,
+			"headers": "Authorization: Basic aGF5eWFwcGFzYW15X2V4dDpBdXN0aW44MTY=\n",
+			"method": "GET",
+			"pathVariables": {},
+			"url": "https://jira.icontrol.com/rest/zapi/latest/teststep/245771",
+			"preRequestScript": null,
+			"tests": null,
+			"currentHelper": "basicAuth",
+			"helperAttributes": "{\"id\":\"basic\",\"username\":\"hayyappasamy_ext\",\"password\":\"Austin816\",\"saveToRequest\":true}",
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Basic aGF5eWFwcGFzYW15X2V4dDpBdXN0aW44MTY=",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariableData": [],
+			"responses": [],
+			"collectionId": "79868229-a930-050c-a703-9223d538c26a"
+		},
+		{
+			"folder": null,
+			"id": "4d15f8c3-3d7a-96f1-7f22-7d450d28190e",
+			"name": "getSteps",
+			"dataMode": "params",
+			"data": null,
+			"auth": {
+				"type": "basic",
+				"basic": [
+					{
+						"key": "username",
+						"value": "hayyappasamy_ext",
+						"type": "string"
+					},
+					{
+						"key": "password",
+						"value": "Austin816",
+						"type": "string"
+					},
+					{
+						"key": "saveHelperData",
+						"value": true,
+						"type": "boolean"
+					},
+					{
+						"key": "showPassword",
+						"value": false,
+						"type": "boolean"
+					}
+				]
+			},
+			"events": null,
+			"rawModeData": null,
+			"descriptionFormat": "html",
+			"description": "",
+			"variables": null,
+			"headers": "Authorization: Basic aGF5eWFwcGFzYW15X2V4dDpBdXN0aW44MTY=\n",
+			"method": "GET",
+			"pathVariables": {},
+			"url": "https://jira.icontrol.com/rest/zapi/latest/stepResult?executionId=260756",
+			"preRequestScript": null,
+			"tests": null,
+			"currentHelper": "basicAuth",
+			"helperAttributes": "{\"id\":\"basic\",\"username\":\"hayyappasamy_ext\",\"password\":\"Austin816\",\"saveToRequest\":true}",
+			"queryParams": [
+				{
+					"key": "executionId",
+					"value": "260756",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Basic aGF5eWFwcGFzYW15X2V4dDpBdXN0aW44MTY=",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariableData": [],
+			"responses": [],
+			"collectionId": "79868229-a930-050c-a703-9223d538c26a"
+		},
+		{
+			"folder": null,
+			"id": "5a49e516-7125-168a-a994-f035374f1e09",
+			"name": "createTestCycle",
+			"dataMode": "raw",
+			"data": [],
+			"auth": {
+				"type": "basic",
+				"basic": [
+					{
+						"key": "username",
+						"value": "hayyappasamy_ext",
+						"type": "string"
+					},
+					{
+						"key": "password",
+						"value": "Austin816",
+						"type": "string"
+					},
+					{
+						"key": "saveHelperData",
+						"value": true,
+						"type": "boolean"
+					},
+					{
+						"key": "showPassword",
+						"value": false,
+						"type": "boolean"
+					}
+				]
+			},
+			"events": null,
+			"rawModeData": "{\r\n  \"clonedCycleId\": \"\",\r\n  \"name\": \"Dummy Cycle JI\",\r\n  \"build\": \"\",\r\n  \"environment\": \"\",\r\n  \"description\": \"Dummy Cycle JI\",\r\n  \"startDate\": \"\",\r\n  \"endDate\": \"\",\r\n  \"projectId\": \"12151\",\r\n  \"versionId\": \"31026\"\r\n}",
+			"descriptionFormat": "html",
+			"description": "create test cycle\nhttp://docs.zapitest.apiary.io/#reference/stepresult-resource-api(s)/stepresult/get",
+			"variables": null,
+			"headers": "Authorization: Basic aGF5eWFwcGFzYW15X2V4dDpBdXN0aW44MTY=\nContent-Type: application/json\n",
+			"method": "POST",
+			"pathVariables": {},
+			"url": "https://jira.icontrol.com/rest/zapi/latest/cycle",
+			"preRequestScript": null,
+			"tests": null,
+			"currentHelper": "basicAuth",
+			"helperAttributes": "{\"id\":\"basic\",\"username\":\"hayyappasamy_ext\",\"password\":\"Austin816\",\"saveToRequest\":true}",
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Basic aGF5eWFwcGFzYW15X2V4dDpBdXN0aW44MTY=",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariableData": [],
+			"responses": [],
+			"collectionId": "79868229-a930-050c-a703-9223d538c26a"
+		},
+		{
+			"folder": null,
+			"id": "81f91b7d-e01a-ff2e-412a-2d060b74b2c9",
+			"name": "getCycleId",
+			"dataMode": "params",
+			"data": null,
+			"auth": null,
+			"events": null,
+			"rawModeData": null,
+			"descriptionFormat": null,
+			"description": "Return cycleId which will be used as a parameter to get executionId\n\nprojectId=12151&versionId=31026&cycleId=3639\n\nhttp://docs.zapitest.apiary.io/#reference/stepresult-resource-api(s)/stepresult/get",
+			"variables": null,
+			"headers": "Authorization: Basic aGF5eWFwcGFzYW15X2V4dDpBdXN0aW44MTY=\n",
+			"method": "GET",
+			"pathVariables": {},
+			"url": "https://jira.icontrol.com/rest/zapi/latest/cycle?versionId=31456&projectId=12151",
+			"preRequestScript": null,
+			"tests": null,
+			"currentHelper": null,
+			"helperAttributes": null,
+			"queryParams": [
+				{
+					"key": "versionId",
+					"value": "31456",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "projectId",
+					"value": "12151",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Basic aGF5eWFwcGFzYW15X2V4dDpBdXN0aW44MTY=",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariableData": [],
+			"responses": [],
+			"collectionId": "79868229-a930-050c-a703-9223d538c26a"
+		},
+		{
+			"folder": null,
+			"id": "879bfad6-82f2-ddde-3f99-dfa30169bb4b",
+			"name": "createExecution",
+			"dataMode": "raw",
+			"data": [],
+			"auth": {
+				"type": "basic",
+				"basic": [
+					{
+						"key": "username",
+						"value": "hayyappasamy_ext",
+						"type": "string"
+					},
+					{
+						"key": "password",
+						"value": "Austin816",
+						"type": "string"
+					},
+					{
+						"key": "saveHelperData",
+						"value": true,
+						"type": "boolean"
+					},
+					{
+						"key": "showPassword",
+						"value": false,
+						"type": "boolean"
+					}
+				]
+			},
+			"events": null,
+			"rawModeData": "{\r\n  \"issueId\": 245612,\r\n  \"versionId\": 31026,\r\n  \"cycleId\": 4099,\r\n  \"projectId\": 12151\r\n}",
+			"descriptionFormat": "html",
+			"description": "http://docs.zapitest.apiary.io/#reference/stepresult-resource-api(s)/stepresult/get",
+			"variables": null,
+			"headers": "Authorization: Basic aGF5eWFwcGFzYW15X2V4dDpBdXN0aW44MTY=\nContent-Type: application/json\n",
+			"method": "POST",
+			"pathVariables": {},
+			"url": "https://jira.icontrol.com/rest/zapi/latest/execution",
+			"preRequestScript": null,
+			"tests": null,
+			"currentHelper": "basicAuth",
+			"helperAttributes": "{\"id\":\"basic\",\"username\":\"hayyappasamy_ext\",\"password\":\"Austin816\",\"saveToRequest\":true}",
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Basic aGF5eWFwcGFzYW15X2V4dDpBdXN0aW44MTY=",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariableData": [],
+			"responses": [],
+			"collectionId": "79868229-a930-050c-a703-9223d538c26a"
+		},
+		{
+			"folder": null,
+			"id": "97f64ce0-5206-a7db-4376-ea4595f50e81",
+			"name": "getExecutionId",
+			"dataMode": "raw",
+			"data": [],
+			"auth": null,
+			"events": null,
+			"rawModeData": "",
+			"descriptionFormat": null,
+			"description": "Get executionId of the test case which will be used to pass as a parameter for updateTestCase call\nprojectId=12151&versionId=31026&cycleId=3639",
+			"variables": null,
+			"headers": "Authorization: Basic aGF5eWFwcGFzYW15X2V4dDpBdXN0aW44MTY=\n",
+			"method": "GET",
+			"pathVariables": {},
+			"url": "https://jira.icontrol.com/rest/zapi/latest/execution?projectId=12151&versionId=31026&cycleId=3639",
+			"preRequestScript": null,
+			"tests": null,
+			"currentHelper": null,
+			"helperAttributes": null,
+			"queryParams": [
+				{
+					"key": "projectId",
+					"value": "12151",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "versionId",
+					"value": "31026",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "cycleId",
+					"value": "3639",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Basic aGF5eWFwcGFzYW15X2V4dDpBdXN0aW44MTY=",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariableData": [],
+			"responses": [],
+			"collectionId": "79868229-a930-050c-a703-9223d538c26a"
+		},
+		{
+			"folder": null,
+			"id": "a211721e-f98b-e6db-cb8c-8c12da5188aa",
+			"name": "postAttachment",
+			"dataMode": "binary",
+			"data": [],
+			"auth": null,
+			"events": null,
+			"rawModeData": "",
+			"descriptionFormat": "html",
+			"description": "Sample code: https://support.getzephyr.com/hc/en-us/articles/202466019-Sample-Add-Attachment-to-Execution\nhttps://support.getzephyr.com/hc/en-us/articles/202466019-Sample-Add-Attachment-to-Execution",
+			"variables": null,
+			"headers": "Authorization: Basic aGF5eWFwcGFzYW15X2V4dDpBdXN0aW44MTY=\nX-Atlassian-Token: nocheck\nContent-Type: multipart/form-data\n",
+			"method": "POST",
+			"pathVariables": {},
+			"url": "https://jira.icontrol.com/rest/zapi/latest/attachment?issueId=221850&versionId=31026&entityName=StepScreenshot.PNGcycleId=3639&entityId=1005603&comment=ExampleScreenshot&projectId=12151",
+			"preRequestScript": null,
+			"tests": null,
+			"currentHelper": null,
+			"helperAttributes": null,
+			"queryParams": [
+				{
+					"key": "issueId",
+					"value": "221850",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "versionId",
+					"value": "31026",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "entityName",
+					"value": "StepScreenshot.PNGcycleId=3639",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "entityId",
+					"value": "1005603",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "comment",
+					"value": "ExampleScreenshot",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "projectId",
+					"value": "12151",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Basic aGF5eWFwcGFzYW15X2V4dDpBdXN0aW44MTY=",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "X-Atlassian-Token",
+					"value": "nocheck",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "multipart/form-data",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariableData": [],
+			"responses": [],
+			"collectionId": "79868229-a930-050c-a703-9223d538c26a"
+		},
+		{
+			"folder": null,
+			"id": "d580b308-49cd-5ce9-6002-0d6aabba9ead",
+			"name": "updateTestStep",
+			"dataMode": "raw",
+			"data": [],
+			"auth": null,
+			"events": null,
+			"rawModeData": "{\r\n            \"id\":283921,\r\n            \"issueId\": 245771,\r\n            \"executionId\": 259870,\r\n            \"status\": \"1\",\r\n            \"defectList\": [],\r\n            \"updateDefectList\": \"true\",\r\n            \"comment\": \"updated by API call\"\r\n            }\r\n            \r\n            \r\n",
+			"descriptionFormat": null,
+			"description": "UpdateTestStep\n\nprojectId=12151&versionId=31026&cycleId=3639\nProject id:\nCycle Id:\nVersion id:\n\nhttp://docs.zapitest.apiary.io/#reference/stepresult-resource-api(s)/stepresult/get",
+			"variables": null,
+			"headers": "Authorization: Basic aGF5eWFwcGFzYW15X2V4dDpBdXN0aW44MTY=\nContent-Type: application/json\n",
+			"method": "PUT",
+			"pathVariables": {},
+			"url": "https://jira.icontrol.com/rest/zapi/latest/stepResult/283921",
+			"preRequestScript": null,
+			"tests": null,
+			"currentHelper": null,
+			"helperAttributes": null,
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Basic aGF5eWFwcGFzYW15X2V4dDpBdXN0aW44MTY=",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariableData": [],
+			"responses": [],
+			"collectionId": "79868229-a930-050c-a703-9223d538c26a"
+		}
+	]
+}
